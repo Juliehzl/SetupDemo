@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  
+  <?if $(var.Platform)=x64 ?>
+  <?define msiProductId = "102F7DF4-19A6-4d3d-987F-FF57A2031593" ?>
+  <?define win64Flag = "yes" ?>
+  <?else ?>
+  <?define msiProductId = "8AE46CAF-220F-4B9F-9527-D4A19A27C45B" ?>
+  <?define win64Flag = "no" ?>
+  <?endif ?>
+  
+	<Product Id="*" Name="SetupDemo" Language="1033" Version="1.0.0.0" Manufacturer="Zunli" UpgradeCode="922b07b7-7539-4cad-a9fa-9a7aa9cacb47">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+    <Binary Id="GetSystemInfoCustomActionDLL"   SourceFile="$(var.GetSystemInfo.TargetDir)GetSystemInfo.CA.dll" />
+    <CustomAction Id="CA_GetSystemInfo"
+                  BinaryKey="GetSystemInfoCustomActionDLL"               
+                  DllEntry="GetSystemInfo"               
+                  Execute="immediate"               
+                  Return="check" />
+
+    <!-- Check VS Code installed -->
+    <Property Id="VSCODEPATH" Secure="yes">
+      <RegistrySearch Id="VSCode_Search"
+                      Root="HKCR"
+                      Key="Applications\Code.exe\shell\open\command"             
+                      Type="file" 
+                      Win64="yes"/>
+    </Property>
+    <!-- 
+    <Condition Message="You must uninstall VS Code first before running this installer.">
+      <![CDATA[Installed OR NOT VSCODEPATH]]>
+    </Condition>
+    -->
+ 
+    <!-- Get VS Code version -->
+    <Binary Id="GetVSCodeVersionCustomActionDLL"   SourceFile="$(var.GetVSCodeVersion.TargetDir)GetVSCodeVersion.CA.dll" />
+    <CustomAction Id="CA_GetVSCodeVersion"
+                  BinaryKey="GetVSCodeVersionCustomActionDLL"
+                  DllEntry="GetVSCodeVersion"
+                  Execute="immediate"
+                  Return="check" />
+    
+    <!-- 
+    <Property Id="WixQuietExecCmdLine" Value="&quot;C:\Windows\System32\cmd.exe&quot; /c code -v"/>
+    <CustomAction Id="QtExecExample" BinaryKey="WixCA" DllEntry="WixQuietExec" Execute="immediate" Return="check"/>
+    
+    <InstallExecuteSequence>
+      <Custom Action="QtExecExample" After="AppSearch"> VSCODEPATH </Custom>
+    </InstallExecuteSequence>-->
+
+    <!-- Check JDK installed version and get JAVA_HOME-->
+    <Property Id="JDKVERSION" Secure="yes">
+      <RegistrySearch Id="JDK_Search"
+                      Root="HKLM"
+                      Key="SOFTWARE\JavaSoft\JDK"
+                      Name="CurrentVersion"
+                      Type="raw"
+                      Win64="yes"/>
+    </Property>
+    
+    <Property Id="JAVAHOME" Secure="yes">
+      <RegistrySearch Id="JAVAHOME_Search"
+                      Root="HKLM"
+                      Key="SOFTWARE\JavaSoft\JDK\[JDKVERSION]"
+                      Name="JavaHome"
+                      Type="raw"
+                      Win64="yes"/>
+    </Property>
+
+    <!-- Check JAVA Environment Variables
+    <Binary Id="CheckJAVAEnvCustomActionDLL"   SourceFile="$(var.CheckJAVAEnv.TargetDir)CheckJAVAEnv.CA.dll" />
+    <CustomAction Id="CA_CheckJAVAEnv"
+                  BinaryKey="CheckJAVAEnvCustomActionDLL"
+                  DllEntry="CheckJAVAEnv"
+                  Execute="immediate"
+                  Return="check" /> -->
+
+    
+    <!-- Check AdoptOpenJDK installed version and get JAVA_HOME-->
+    <Binary Id="GetAdoptOpenJDKVersionCustomActionDLL"   SourceFile="$(var.GetAdoptOpenJDKVersion.TargetDir)GetAdoptOpenJDKVersion.CA.dll" />
+    <CustomAction Id="CA_GetAdoptOpenJDKVersion"
+                  BinaryKey="GetAdoptOpenJDKVersionCustomActionDLL"
+                  DllEntry="GetAdoptOpenJDKVersion"
+                  Execute="immediate"
+                  Return="check" />
+
+
+    <InstallUISequence>
+      <Custom Action="CA_GetSystemInfo" After="LaunchConditions" />
+    </InstallUISequence>
+
+    <InstallExecuteSequence>
+      <Custom Action ="CA_GetVSCodeVersion" After="AppSearch"> VSCODEPATH </Custom>
+      <Custom Action ="CA_GetAdoptOpenJDKVersion" After="CA_GetVSCodeVersion"> NOT JDKVERSION </Custom>
+      <!-- <Custom Action ="CA_CheckJAVAEnv" After="CA_GetAdoptOpenJDKVersion"> JDKVERSION </Custom> -->
+    </InstallExecuteSequence>
+   
+  </Product>
+  
+
+</Wix>

@@ -1,0 +1,8 @@
+E:\Softwares\VS\Projects\SetupDemo\SetupDemo\bin\Debug\SetupDemo.msi
+E:\Softwares\VS\Projects\SetupDemo\SetupDemo\bin\Debug\SetupDemo.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\SetupDemo.wixproj.BindContentsFileListnull.txt
+obj\Debug\SetupDemo.wixproj.BindOutputsFileListnull.txt
+obj\Debug\SetupDemo.wixproj.BindBuiltOutputsFileListnull.txt
+E:\Softwares\VS\SetupDemo\SetupDemo\bin\Debug\SetupDemo.msi
+E:\Softwares\VS\SetupDemo\SetupDemo\bin\Debug\SetupDemo.wixpdb

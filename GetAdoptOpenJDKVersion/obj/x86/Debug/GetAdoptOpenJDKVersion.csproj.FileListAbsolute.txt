@@ -1,0 +1,10 @@
+E:\Softwares\VS\SetupDemo\GetAdoptOpenJDKVersion\obj\x86\Debug\GetAdoptOpenJDKVersion.csprojAssemblyReference.cache
+E:\Softwares\VS\SetupDemo\GetAdoptOpenJDKVersion\obj\x86\Debug\GetAdoptOpenJDKVersion.csproj.CoreCompileInputs.cache
+E:\Softwares\VS\SetupDemo\GetAdoptOpenJDKVersion\bin\Debug\GetAdoptOpenJDKVersion.dll
+E:\Softwares\VS\SetupDemo\GetAdoptOpenJDKVersion\bin\Debug\GetAdoptOpenJDKVersion.CA.dll
+E:\Softwares\VS\SetupDemo\GetAdoptOpenJDKVersion\bin\Debug\GetAdoptOpenJDKVersion.pdb
+E:\Softwares\VS\SetupDemo\GetAdoptOpenJDKVersion\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+E:\Softwares\VS\SetupDemo\GetAdoptOpenJDKVersion\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
+E:\Softwares\VS\SetupDemo\GetAdoptOpenJDKVersion\obj\x86\Debug\GetAdoptOpenJDKVersion.csproj.CopyComplete
+E:\Softwares\VS\SetupDemo\GetAdoptOpenJDKVersion\obj\x86\Debug\GetAdoptOpenJDKVersion.dll
+E:\Softwares\VS\SetupDemo\GetAdoptOpenJDKVersion\obj\x86\Debug\GetAdoptOpenJDKVersion.pdb

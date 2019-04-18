@@ -1,0 +1,17 @@
+E:\Softwares\VS\Projects\SetupDemo\GetSystemInfo\bin\Debug\GetSystemInfo.dll
+E:\Softwares\VS\Projects\SetupDemo\GetSystemInfo\bin\Debug\GetSystemInfo.CA.dll
+E:\Softwares\VS\Projects\SetupDemo\GetSystemInfo\bin\Debug\GetSystemInfo.pdb
+E:\Softwares\VS\Projects\SetupDemo\GetSystemInfo\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+E:\Softwares\VS\Projects\SetupDemo\GetSystemInfo\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
+E:\Softwares\VS\Projects\SetupDemo\GetSystemInfo\obj\x86\Debug\GetSystemInfo.csprojResolveAssemblyReference.cache
+E:\Softwares\VS\Projects\SetupDemo\GetSystemInfo\obj\x86\Debug\GetSystemInfo.dll
+E:\Softwares\VS\Projects\SetupDemo\GetSystemInfo\obj\x86\Debug\GetSystemInfo.pdb
+E:\Softwares\VS\SetupDemo\GetSystemInfo\bin\Debug\GetSystemInfo.dll
+E:\Softwares\VS\SetupDemo\GetSystemInfo\bin\Debug\GetSystemInfo.CA.dll
+E:\Softwares\VS\SetupDemo\GetSystemInfo\bin\Debug\GetSystemInfo.pdb
+E:\Softwares\VS\SetupDemo\GetSystemInfo\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+E:\Softwares\VS\SetupDemo\GetSystemInfo\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
+E:\Softwares\VS\SetupDemo\GetSystemInfo\obj\x86\Debug\GetSystemInfo.csproj.CoreCompileInputs.cache
+E:\Softwares\VS\SetupDemo\GetSystemInfo\obj\x86\Debug\GetSystemInfo.csproj.CopyComplete
+E:\Softwares\VS\SetupDemo\GetSystemInfo\obj\x86\Debug\GetSystemInfo.dll
+E:\Softwares\VS\SetupDemo\GetSystemInfo\obj\x86\Debug\GetSystemInfo.pdb

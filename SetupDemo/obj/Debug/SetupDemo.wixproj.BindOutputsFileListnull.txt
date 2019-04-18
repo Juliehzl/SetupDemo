@@ -1,0 +1,2 @@
+E:\Softwares\VS\SetupDemo\SetupDemo\bin\Debug\SetupDemo.msi
+E:\Softwares\VS\SetupDemo\SetupDemo\bin\Debug\SetupDemo.wixpdb

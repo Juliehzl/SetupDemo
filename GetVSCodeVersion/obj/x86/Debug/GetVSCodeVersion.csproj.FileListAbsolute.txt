@@ -1,0 +1,10 @@
+E:\Softwares\VS\SetupDemo\GetVSCodeVersion\bin\Debug\GetVSCodeVersion.dll
+E:\Softwares\VS\SetupDemo\GetVSCodeVersion\bin\Debug\GetVSCodeVersion.CA.dll
+E:\Softwares\VS\SetupDemo\GetVSCodeVersion\bin\Debug\GetVSCodeVersion.pdb
+E:\Softwares\VS\SetupDemo\GetVSCodeVersion\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+E:\Softwares\VS\SetupDemo\GetVSCodeVersion\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
+E:\Softwares\VS\SetupDemo\GetVSCodeVersion\obj\x86\Debug\GetVSCodeVersion.csprojAssemblyReference.cache
+E:\Softwares\VS\SetupDemo\GetVSCodeVersion\obj\x86\Debug\GetVSCodeVersion.csproj.CoreCompileInputs.cache
+E:\Softwares\VS\SetupDemo\GetVSCodeVersion\obj\x86\Debug\GetVSCodeVersion.csproj.CopyComplete
+E:\Softwares\VS\SetupDemo\GetVSCodeVersion\obj\x86\Debug\GetVSCodeVersion.dll
+E:\Softwares\VS\SetupDemo\GetVSCodeVersion\obj\x86\Debug\GetVSCodeVersion.pdb
